@@ -1,0 +1,14 @@
+<form style="padding-left: 2%; padding-right: 2%;">
+  <br />
+  <div class="d-flex justify-content-between">
+    <button type="button" class="btn btn-primary" (click)="getData()">Get Data</button>
+    <div *ngIf="running" class="spinner-border text-primary" role="status">
+      <span class="sr-only"></span>
+    </div>
+  </div>
+  <hr />
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Data received from server.</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>
